@@ -5,7 +5,7 @@ A l'ouverture, l'utilisateur choisit entre trois menus :
 - Recettes salées
 - Recettes sucrées
 
-Les deux derniers choix permettent d'afficher une liste de recettes correspondant au choix. Le premier menu laisse l'utilisateur entrer un terme qui sera recherché dans le nom des recettes. Une liste de recettes correspondantes est alors affichée.
+Les deux derniers choix permettent d'afficher une liste de recettes correspondant au choix. Le premier menu laisse l'utilisateur entrer un terme qui sera recherché dans le nom des recettes (si le terme n'est pas complet, l'application utilise l'autocomplétion). Une liste de recettes correspondantes est alors affichée.
 
 Chaque recette peut être sélectionnée pour être visualisée en détail. Il peut arriver que certaines recettes retournées par l'API ne contiennent en fait pas l'image détaillée. Dans ce cas, un écran avec un message d'erreur s'affiche et l'utilisateur a la possibilité de retourner en arrière.
 
