@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="147dp"
+        android:layout_height="84dp"
+        android:layout_weight="1"
+        android:layout_marginTop="33dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/FoodName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="184dp"
+        android:layout_height="142dp"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@mipmap/mon_icone"
+        tools:ignore="ImageContrastCheck" />
+
+</LinearLayout>

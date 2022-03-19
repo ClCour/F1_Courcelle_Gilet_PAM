@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">GoodCook</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Menu</string>
+    <string name="fragment_search">Recherche</string>
+    <string name="recipe_fragment">Recette</string>
+
+    <string name="hello_first_fragment">Bienvenue sur GoodCook</string>
+
+    <string name="recettejour">Rechercher une recette</string>
+    <string name="recettesale">Les recettes salées</string>
+    <string name="recettesucre">Les recettes sucrées</string>
+
+    <string name="FoodReceipt">Image :</string>
+    <string name="FoodName">Plat :</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Pb_recherche">"Votre recherche n'a pas de résultats"</string>
+    <string name="Pb_recipe">"Le détail de la recette n'est pas disponible"</string>
+    <string name="button_retour">Retour au menu</string>
+    <string name="search">Search</string>
+    <string name="recette">Recette</string>
+    <string name="result_search">Liste de recettes</string>
+</resources>

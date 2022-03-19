@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MenuFragment">
+
+    <fragment
+        android:id="@+id/MainActivity"
+        android:name="com.example.goodcook.MainActivity"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/action_HostFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ErreurFragment"
+        android:name="com.example.goodcook.ErreurFragment"
+        android:label="Erreur"
+        tools:layout="@layout/fragment_erreur">
+        <action
+            android:id="@+id/action_ErreurFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MenuFragment"
+        android:name="com.example.goodcook.MenuFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_MenuFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment" />
+        <action
+            android:id="@+id/action_MenuFragment_to_SearchMenuFragment"
+            app:destination="@id/SearchResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.example.goodcook.SearchFragment"
+        android:label="@string/fragment_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_SearchFragment_to_SearchResultFragment"
+            app:destination="@id/SearchResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SearchResultFragment"
+        android:name="com.example.goodcook.SearchResultFragment"
+        android:label="@string/result_search"
+        tools:layout="@layout/fragment_search_result">
+        <action
+            android:id="@+id/action_SearchResultFragment_to_MenuFragment"
+            app:destination="@id/SearchResultFragment" />
+        <action
+            android:id="@+id/action_SearchFragment_to_RecipeFragment"
+            app:destination="@+id/RecipeFragment"/>
+        <action
+            android:id="@+id/action_SearchResultFragment_to_ErreurFragment"
+            app:destination="@id/ErreurFragment" />
+
+    </fragment>
+    <fragment android:id="@+id/RecipeFragment"
+        android:name="com.example.goodcook.RecipeFragment"
+        android:label="@string/recipe_fragment"
+        tools:layout="@layout/fragment_recipe">
+        <action
+            android:id="@+id/action_RecipeFragment_to_ErreurRecipeFragment"
+            app:destination="@id/ErreurRecipeFragment" />
+    </fragment>
+
+    <fragment android:id="@+id/ErreurRecipeFragment"
+        android:name="com.example.goodcook.ErreurRecipeFragment"
+        android:label="@string/recipe_fragment"
+        tools:layout="@layout/erreur_recipe_fragment">
+        <action
+            android:id="@+id/action_ErreurRecipeFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+        <action
+            android:id="@+id/action_ErreurRecipeFragment_to_SearchResultFragment"
+            app:destination="@id/SearchResultFragment" />
+    </fragment>
+</navigation>
