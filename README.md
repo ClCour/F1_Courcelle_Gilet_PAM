@@ -14,5 +14,5 @@ Remarque : Sur cet écran, il reste un bug que nous n'avons pas réussi à corri
 
 L'application supporte la rotation de l'écran.  
 
-Chacun des trois menus est géré par le même fagment qui permet d'afficher une Recycler-view avec différentes recettes. La navigation entre les différents fragments est faite avec le composant NavController.
+Chacun des trois menus est géré par le même fragment qui permet d'afficher une Recycler-view avec différentes recettes. La navigation entre les différents fragments est faite avec le composant NavController.
 
